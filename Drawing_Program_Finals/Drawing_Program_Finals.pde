@@ -6,7 +6,7 @@ Boolean draw=false;
 void setup() {
   fullScreen (); 
   population();
-  drawingDiameter = displayWidth*1/10; //Needed for ellipses
+  drawingDiameter = displayWidth*1/100; //Needed for ellipses
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
 }//End setup()
