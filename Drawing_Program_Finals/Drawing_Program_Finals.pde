@@ -2,10 +2,12 @@
 //Global Variables
 float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight,drawingDiameter;
 Boolean draw=false;
+color quitButtonClour
 
 void setup() {
   fullScreen (); 
   population();
+  quitButtonSetup();
   drawingDiameter = displayWidth*1/100; //Needed for ellipses
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
@@ -19,6 +21,9 @@ void draw() {
 }//End draw()
 
 void mousePressed() {
+  //
+  quitButtonMousePressed();
+  //
   if ( mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfaceHeight )
   {
     if (draw == false)
