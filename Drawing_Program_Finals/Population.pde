@@ -4,5 +4,5 @@ void population() {
   drawingSurfaceWidth = displayWidth*3/4;
   drawingSurfaceHeight = displayHeight*3/4;
   //
-  
+  drawingDiameter = width*1/100;
 }//End population()

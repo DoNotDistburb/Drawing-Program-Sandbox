@@ -2,7 +2,6 @@
 //Global Variables
 float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight,drawingDiameter;
 Boolean draw=false;
-color quitButtonClour
 
 void setup() {
   fullScreen (); 
