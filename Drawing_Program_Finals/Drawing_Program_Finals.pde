@@ -1,4 +1,3 @@
-
 //Global Variables
 float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight,drawingDiameter;
 Boolean draw=false;
@@ -7,7 +6,6 @@ void setup() {
   fullScreen (); 
   population();
   quitButtonSetup();
-  drawingDiameter = displayWidth*1/100; //Needed for ellipses
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
 }//End setup()
