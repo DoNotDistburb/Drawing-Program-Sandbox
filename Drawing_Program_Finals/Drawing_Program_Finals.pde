@@ -1,19 +1,21 @@
 //Global Variables
-float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight,drawingDiameter;
+float drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight, drawingDiameter;
 Boolean draw=false;
 
 void setup() {
   fullScreen (); 
   population();
-  quitButtonSetup();
+  quitButtonSetup(); //Contains Separate Population
+  textSetup();
   //
   rect(drawingSurfaceX, drawingSurfaceY, drawingSurfaceWidth, drawingSurfaceHeight);
 }//End setup()
 
 void draw() {
+  quitButtonDraw();
   if ( draw == true && mouseX>drawingSurfaceX && mouseX<drawingSurfaceX+drawingSurfaceWidth && mouseY>drawingSurfaceY && mouseY<drawingSurfaceY+drawingSurfaceHeight)
   {
-    ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter);// This code is for line vs. circle
+    ellipse(mouseX, mouseY, drawingDiameter, drawingDiameter); //This code-line is for line vs. circle
   }//End line draw
 }//End draw()
 
@@ -30,6 +32,7 @@ void mousePressed() {
       draw = false;
     }//End draw boolean
   }//End line draw
+  
 }//End mousePressed()
 
 void keyPressed() {

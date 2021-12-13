@@ -6,7 +6,7 @@ int reset=1;
 
 void quitButtonSetup()
 {
-  quitButtonX = displayWidth*19/20;
+  quitButtonX = displayWidth*18/20;
   quitButtonY = displayHeight*0;
   quitButtonWidth = displayWidth*2/20;
   quitButtonHeight = displayHeight*1/20;
