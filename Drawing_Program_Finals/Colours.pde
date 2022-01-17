@@ -127,3 +127,14 @@ void SmallBoxColorSelector11() {
 void SmallBoxColorSelector12() { 
 
    fill(darkblue);
+   rect(ColourX1, ColourY1*0, ColourDisplayWidth, ColourDisplayHeight);
+   ColourY1 = displayHeight*2/30;
+   ColourDisplayWidth = displayWidth*2/24;
+   ColourDisplayHeight = displayHeight*1/16;
+}
+//
+
+void DrawGrid() {
+  
+  if (ColorSelector != black && ColorSelector != blue && ColorSelector != purple && ColorSelector != pink && ColorSelector != green && ColorSelector != red && ColorSelector != yellow && ColorSelector != lightblue && ColorSelector != lightgreen && ColorSelector != orange && ColorSelector != white && ColorSelector != grey)
+    ColorSelector=red;
