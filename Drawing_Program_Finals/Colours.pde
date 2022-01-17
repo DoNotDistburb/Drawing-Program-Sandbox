@@ -136,5 +136,19 @@ void SmallBoxColorSelector12() {
 
 void DrawGrid() {
   
-  if (ColorSelector != black && ColorSelector != blue && ColorSelector != purple && ColorSelector != pink && ColorSelector != green && ColorSelector != red && ColorSelector != yellow && ColorSelector != lightblue && ColorSelector != lightgreen && ColorSelector != orange && ColorSelector != white && ColorSelector != grey)
-    ColorSelector=red;
+  if (ColorSelector != black && ColorSelector != blue && ColorSelector != purple && ColorSelector != pink && ColorSelector != green && ColorSelector != red && ColorSelector != yellow && ColorSelector != orange && ColorSelector != grey && ColorSelector != lightblue; && ColorSelector != noengreen && ColorSelector != grey
+    ColorSelector=darkblue;
+    
+  int l[]= {20, 120, 220, 320, 420};
+  int w=100;
+  int t[]= {1150, 1250, 1350, 1450, 1550};
+  int h = 100;
+  
+  for (int i=0; i<3; i++) {
+    for (int j=0; j<5; j++) {
+      fill(ColorSelector1);
+      rect(l[j], t[i], w, h);
+    }
+  }
+}
+//
